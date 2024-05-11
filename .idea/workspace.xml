@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45e69325-fba9-4e57-8c41-efa8ae8eaf1d" name="Changes" comment="GPU не работает" />
+    <list default="true" id="45e69325-fba9-4e57-8c41-efa8ae8eaf1d" name="Changes" comment="Модельку надо сохранять">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "dispikerton"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/dispikerton/bitcoin.git",
@@ -122,7 +130,7 @@
       <updated>1715439373270</updated>
       <workItem from="1715439374658" duration="2090000" />
       <workItem from="1715441596143" duration="1000000" />
-      <workItem from="1715442869266" duration="990000" />
+      <workItem from="1715442869266" duration="2287000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -188,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715443751288</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Модельку надо сохранять">
+      <option name="closed" value="true" />
+      <created>1715444057490</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444057490</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,9 +219,10 @@
     <MESSAGE value="Упрощаю, чтобы ускорить обучение" />
     <MESSAGE value="Визуализация прогноза" />
     <MESSAGE value="GPU не работает" />
-    <option name="LAST_COMMIT_MESSAGE" value="GPU не работает" />
+    <MESSAGE value="Модельку надо сохранять" />
+    <option name="LAST_COMMIT_MESSAGE" value="Модельку надо сохранять" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bitcoin$main.coverage" NAME="main Coverage Results" MODIFIED="1715443734969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bitcoin$main.coverage" NAME="main Coverage Results" MODIFIED="1715444072456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

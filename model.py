@@ -2,9 +2,11 @@ from tensorflow import keras
 
 
 def create_model(window_size, num_features):
-    model = keras.Sequential()
-    model.add(keras.layers.LSTM(32, input_shape=(window_size, num_features)))
-    model.add(keras.layers.Dense(1))
+    model = keras.Sequential([
+        keras.layers.Input(shape=(window_size, num_features)),
+        keras.layers.LSTM(32),
+        keras.layers.Dense(1)
+    ])
     model.compile(optimizer='sgd', loss='mse')
     return model
 
