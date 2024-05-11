@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+import uvicorn
 from data_preprocessing import load_data, prepare_data
 from model import create_model, train_model, evaluate_model
 
@@ -27,3 +27,7 @@ async def startup_event():
 @app.get("/")
 async def root():
     return {"message": "Bitcoin Price Prediction API"}
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
