@@ -9,8 +9,9 @@ def create_model(window_size, num_features):
     return model
 
 
-def train_model(model, x_train, y_train, epochs=50, batch_size=128):
+def train_model(model, x_train, y_train, epochs=50, batch_size=128, save_path='model.keras'):
     model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, verbose=1)
+    model.save(save_path)
 
 
 def evaluate_model(model, x_test, y_test):
