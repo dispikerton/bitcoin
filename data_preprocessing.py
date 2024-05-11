@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 def load_data(file_path):
     df = pd.read_csv(file_path)
-    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
     df.set_index('timestamp', inplace=True)
     return df[['open', 'high', 'low', 'close', 'volume']]
 
