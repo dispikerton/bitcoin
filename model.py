@@ -11,13 +11,13 @@ else:
 
 def create_model(window_size, num_features):
     model = keras.Sequential()
-    model.add(keras.layers.LSTM(50, input_shape=(window_size, num_features)))
+    model.add(keras.layers.LSTM(32, input_shape=(window_size, num_features)))
     model.add(keras.layers.Dense(1))
-    model.compile(optimizer='adam', loss='mse')
+    model.compile(optimizer='sgd', loss='mse')
     return model
 
 
-def train_model(model, x_train, y_train, epochs=100, batch_size=32):
+def train_model(model, x_train, y_train, epochs=50, batch_size=128):
     model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, verbose=1)
 
 
