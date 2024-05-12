@@ -14,6 +14,8 @@ file_path = 'bitcoin_2017_to_2023.csv'
 window_size = 60
 model_path = 'model.keras'
 scaler_path = 'scaler.pkl'
+x_test_path = 'x_test.npy'
+y_test_path = 'y_test.npy'
 
 
 @app.get("/")
@@ -35,23 +37,18 @@ async def train():
     print("Model evaluated.")
     with open(scaler_path, 'wb') as file:
         pickle.dump(scaler, file)
-    return {"message": "Model training completed.", "x_test": x_test, "y_test": y_test}
-
-
-@app.get("/load_model")
-async def load_trained_model():
-    model = load_model(model_path)
-    with open(scaler_path, 'rb') as file:
-        scaler = pickle.load(file)
-    return {"message": "Model and scaler loaded successfully.", "model": model, "scaler": scaler}
+    np.save(x_test_path, x_test)
+    np.save(y_test_path, y_test)
+    return {"message": "Model training completed."}
 
 
 @app.get("/visualize")
-async def visualize(model: dict, scaler: dict, x_test: list, y_test: list):
-    model = model["model"]
-    scaler = scaler["scaler"]
-    x_test = np.array(x_test)
-    y_test = np.array(y_test)
+async def visualize():
+    model = load_model(model_path)
+    with open(scaler_path, 'rb') as file:
+        scaler = pickle.load(file)
+    x_test = np.load(x_test_path)
+    y_test = np.load(y_test_path)
 
     predictions = model.predict(x_test)
 

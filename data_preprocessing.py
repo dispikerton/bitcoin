@@ -16,11 +16,11 @@ def scale_data(data):
 
 
 def create_dataset(data, window_size):
-    X, y = [], []
+    x, y = [], []
     for i in range(window_size, len(data)):
-        X.append(data[i - window_size:i, :])
+        x.append(data[i - window_size:i, :])
         y.append(data[i, 3])
-    return np.array(X), np.array(y)
+    return np.array(x), np.array(y)
 
 
 def prepare_data(data, window_size, train_size=0.8):
