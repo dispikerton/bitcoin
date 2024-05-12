@@ -19,3 +19,7 @@ def train_model(model, x_train, y_train, epochs=50, batch_size=128, save_path='m
 def evaluate_model(model, x_test, y_test):
     test_loss = model.evaluate(x_test, y_test)
     print(f'Test loss: {test_loss:.4f}')
+
+
+def load_model(model_path):
+    return keras.models.load_model(model_path)
