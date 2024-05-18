@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45e69325-fba9-4e57-8c41-efa8ae8eaf1d" name="Changes" comment="Делаю загрузку модели">
+    <list default="true" id="45e69325-fba9-4e57-8c41-efa8ae8eaf1d" name="Changes" comment="Сохраняю тестовую выборку">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocessing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/bitcoin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/fingerprint-analysis&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -133,7 +133,11 @@
       <workItem from="1715439374658" duration="2090000" />
       <workItem from="1715441596143" duration="1000000" />
       <workItem from="1715442869266" duration="3510000" />
-      <workItem from="1715498707959" duration="1729000" />
+      <workItem from="1715498707959" duration="3226000" />
+      <workItem from="1715528709407" duration="54000" />
+      <workItem from="1715656065249" duration="11000" />
+      <workItem from="1715672361764" duration="2098000" />
+      <workItem from="1715681558864" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -223,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715500047297</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Сохраняю тестовую выборку">
+      <option name="closed" value="true" />
+      <created>1715500694729</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715500694729</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,9 +253,10 @@
     <MESSAGE value="Модельку надо сохранять" />
     <MESSAGE value="Рефакторинг" />
     <MESSAGE value="Делаю загрузку модели" />
-    <option name="LAST_COMMIT_MESSAGE" value="Делаю загрузку модели" />
+    <MESSAGE value="Сохраняю тестовую выборку" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сохраняю тестовую выборку" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bitcoin$main.coverage" NAME="main Coverage Results" MODIFIED="1715500050662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bitcoin$main.coverage" NAME="main Coverage Results" MODIFIED="1715673679197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
