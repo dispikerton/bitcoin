@@ -4,3 +4,4 @@ matplotlib==3.8.4
 seaborn==0.13.2
 scikit-learn
 tensorflow==2.16.1
+keras==3.3.3
