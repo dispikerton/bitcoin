@@ -1,5 +1,5 @@
 import tensorflow as tf
-from keras import Sequential
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import Input, Dense, LSTM
 
 
@@ -10,12 +10,12 @@ class BitcoinPricePredictor:
         self.model = None
 
     def create_model(self):
-        self.model = Sequential([
+        self.model = tf.keras.Sequential([
             Input(shape=(self.window_size, self.num_features)),
             LSTM(8),
             Dense(1)
         ])
-        self.model.compile(optimizer='adam', loss='mse')
+        self.model.compile(optimizer=Adam(), loss='mse')
 
     def train_model(self, x_train, y_train, epochs=1, batch_size=128, save_path='model.keras'):
         if self.model is None:
