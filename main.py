@@ -1,19 +1,20 @@
+import pickle
+
+import numpy as np
+import uvicorn
 from fastapi import FastAPI
-from matplotlib import pyplot as plt
+
 from data_preprocessing import load_data, prepare_data
 from model import BitcoinPricePredictor
-import pickle
-import uvicorn
-import numpy as np
 
 app = FastAPI()
 
-file_path = 'bitcoin_2017_to_2023.csv'
+file_path = 'data/bitcoin_2017_to_2023.csv'
 window_size = 60
-model_path = 'model.keras'
-scaler_path = 'scaler.pkl'
-x_test_path = 'x_test.npy'
-y_test_path = 'y_test.npy'
+model_path = 'model/model.keras'
+scaler_path = 'model/scaler.pkl'
+x_test_path = 'data/x_test.npy'
+y_test_path = 'data/y_test.npy'
 
 predictor = BitcoinPricePredictor(window_size, 5)
 
